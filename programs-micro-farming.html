@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micro-Farming | Hallelujah Ministries</title>
+<meta name="description" content="Hands-on agriculture that builds skills, food security, and a small revenue stream.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --dusk-indigo:#2D3142; --sunrise-gold:#F2C14E; --clay:#C17C74; --sage:#84A98C;
+  --cream:#FBF7F0; --charcoal:#262421; --muted:#6B6459;
+  --font-heading:'Fraunces',Georgia,serif; --font-body:'Inter',sans-serif;
+}
+body{font-family:var(--font-body);background:var(--cream);color:var(--charcoal);line-height:1.65;-webkit-font-smoothing:antialiased;}
+.container{max-width:1100px;margin:0 auto;padding:0 24px;}
+a{color:var(--clay);}
+h1,h2,h3{font-family:var(--font-heading);color:var(--dusk-indigo);}
+.navbar{padding:22px 0;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(46,58,89,.08);background:#fff;position:sticky;top:0;z-index:10;flex-wrap:wrap;}
+.navbar .logo{font-family:var(--font-heading);font-weight:600;font-size:21px;color:var(--dusk-indigo);text-decoration:none;}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap;}
+.nav-links a{color:var(--charcoal);font-size:14px;text-decoration:none;opacity:.85;}
+.nav-links a:hover,.nav-links a.active{opacity:1;color:var(--dusk-indigo);font-weight:600;}
+.btn{display:inline-block;padding:12px 28px;border-radius:999px;font-weight:600;font-size:15px;border:none;cursor:pointer;text-decoration:none;}
+.btn-primary{background:var(--sunrise-gold);color:var(--dusk-indigo);}
+.btn-primary:hover{opacity:.9;}
+.btn-outline{border:2px solid var(--dusk-indigo);color:var(--dusk-indigo);background:transparent;}
+.hero{padding:72px 0 56px;background:linear-gradient(180deg,#fff,var(--cream));}
+.hero h1{font-size:42px;margin-bottom:16px;max-width:760px;}
+.hero p{font-size:18px;color:var(--muted);max-width:640px;margin-bottom:28px;}
+.section{padding:56px 0;}
+.section-alt{background:#fff;}
+.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(46,58,89,.06);}
+.grid{display:grid;gap:24px;}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+@media(max-width:800px){.grid-3,.grid-2{grid-template-columns:1fr;} .hero h1{font-size:32px;}}
+.tag{display:inline-block;background:rgba(143,160,126,.15);color:var(--sage);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px;}
+footer{background:var(--dusk-indigo);color:#fff;padding:48px 0 28px;margin-top:40px;}
+footer a{color:#fff;opacity:.8;text-decoration:none;}
+footer .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:28px;}
+footer .foot-bottom{opacity:.6;font-size:13px;border-top:1px solid rgba(255,255,255,.15);padding-top:18px;}
+.chat-widget{position:fixed;bottom:24px;right:24px;z-index:50;}
+.chat-toggle{width:58px;height:58px;border-radius:50%;background:var(--sunrise-gold);border:none;cursor:pointer;font-size:24px;box-shadow:0 6px 20px rgba(0,0,0,.2);}
+.chat-panel{display:none;position:fixed;bottom:96px;right:24px;width:340px;max-width:90vw;height:440px;background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.2);flex-direction:column;overflow:hidden;}
+.chat-panel.open{display:flex;}
+.chat-header{background:var(--dusk-indigo);color:#fff;padding:14px 18px;font-weight:600;}
+.chat-messages{flex:1;overflow-y:auto;padding:14px;font-size:14px;}
+.chat-msg{margin-bottom:10px;padding:10px 12px;border-radius:10px;max-width:85%;}
+.chat-msg.user{background:var(--sunrise-gold);margin-left:auto;}
+.chat-msg.bot{background:var(--cream);}
+.chat-input-row{display:flex;border-top:1px solid #eee;}
+.chat-input-row input{flex:1;border:none;padding:12px;font-family:var(--font-body);}
+.chat-input-row button{background:var(--dusk-indigo);color:#fff;border:none;padding:0 18px;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+  <a href="index.html" class="logo">Hallelujah Ministries</a>
+  <div class="nav-links"><a href="index.html" class="">Home</a><a href="about.html" class="">About</a><a href="programs-room-board.html" class="">Room & Board</a><a href="programs-career.html" class="">Career Pathways</a><a href="programs-homeownership.html" class="">Homeownership</a><a href="programs-economic-development.html" class="">Economic Dev</a><a href="programs-holistic-living.html" class="">Holistic Living</a><a href="programs-micro-farming.html" class="active">Micro-Farming</a><a href="community-resources.html" class="">Resources</a><a href="impact.html" class="">Our Impact</a><a href="partner.html" class="">Partner With Us</a><a href="contact.html" class="">Contact</a></div>
+</div></nav>
+
+<section class="hero"><div class="container">
+  <span class="tag">Program</span>
+  <h1>Micro-Farming</h1>
+  <p>Hands-on agriculture that builds skills, food security, and a small revenue stream.</p>
+  <a href="contact.html" class="btn btn-primary">Get in touch about this program</a>
+</div></section>
+<section class="section section-alt"><div class="container">
+  <div class="grid grid-2">
+    <div class="card"><h3 style="margin-bottom:14px;">What this program includes</h3>
+      <ul style="padding-left:18px;"><li style="margin-bottom:10px;color:var(--muted);">Micro-farming training on-site</li><li style="margin-bottom:10px;color:var(--muted);">Food security and healthy-eating access</li><li style="margin-bottom:10px;color:var(--muted);">Pathway to small produce-based income</li><li style="margin-bottom:10px;color:var(--muted);">Foundation for the planned campus micro-farm</li></ul></div>
+    <div class="card"><h3 style="margin-bottom:14px;">Who it's for</h3>
+      <p style="color:var(--muted);">Individuals and families in Pinellas County working toward stability who are ready to engage in a structured, accountable program. Space and eligibility are determined case by case &mdash; reach out to start a conversation.</p></div>
+  </div>
+</div></section>
+
+
+<footer><div class="container">
+  <div class="foot-grid">
+    <div>
+      <div style="font-family:var(--font-heading);font-size:20px;margin-bottom:10px;">Hallelujah Ministries</div>
+      <p style="opacity:.75;font-size:14px;max-width:340px;">3548 5th Ave S, St. Petersburg, FL &middot; A 508(c)(1)(A) faith-based nonprofit building pathways to housing, work, and ownership.</p>
+    </div>
+    <div>
+      <div style="font-weight:600;margin-bottom:10px;">Programs</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="programs-room-board.html">Room &amp; Board</a>
+        <a href="programs-career.html">Career Pathways</a>
+        <a href="programs-homeownership.html">Path to Homeownership</a>
+        <a href="programs-economic-development.html">Economic Development</a>
+        <a href="programs-holistic-living.html">Holistic Living</a>
+        <a href="programs-micro-farming.html">Micro-Farming</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:600;margin-bottom:10px;">Connect</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="contact.html">Contact</a>
+        <a href="partner.html">Partner With Us</a>
+        <a href="community-resources.html">Community Resources</a>
+        <a href="mailto:hello@hallelujahministriesfl.org">hello@hallelujahministriesfl.org</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">&copy; 2026 Hallelujah Ministries &middot; EIN 41-2937198 &middot; 508(c)(1)(A) self-executing status</div>
+</div></footer>
+
+<div class="chat-widget">
+  <button class="chat-toggle" onclick="document.getElementById('chatPanel').classList.toggle('open')">💬</button>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">Ministry Assistant</div>
+    <div class="chat-messages" id="chatMessages"><div class="chat-msg bot">Hi! I'm the Ministry Assistant. Ask me about our programs, how to get involved, or what Hallelujah Ministries offers.</div></div>
+    <div class="chat-input-row">
+      <input id="chatInput" type="text" placeholder="Ask a question..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button onclick="sendChat()">Send</button>
+    </div>
+  </div>
+</div>
+<script src="assets/chat.js" data-agent="ministry"></script>
+</body>
+</html>
