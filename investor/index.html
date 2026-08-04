@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hallelujah ONE™ – Strategic Partner Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0A0A0A; font-family: 'Inter', sans-serif; color: #fff; padding: 2rem 1.5rem; display: flex; justify-content: center; }
+    .page { max-width: 1100px; width: 100%; background: #0A0A0A; padding: 2.5rem; border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.8); }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .page { max-width: 100%; border: none; box-shadow: none; border-radius: 0; padding: 0.75in; background: #fff; color: #111; }
+      .page .badge, .page .gold, .page .stat-number, .page .section-title { color: #B8860B; }
+      .page .stat-label { color: #333; }
+      .page .footer { color: #555; }
+      .page .accent-line { background: #B8860B; }
+      .page .card { background: #f9f9f9; border: 1px solid #ddd; }
+      .page .btn { background: #B8860B; color: #fff; }
+      .page .hero h1 .gold { color: #B8860B; }
+      .page .hero .sub { color: #333; }
+      .page .hero .sub span { color: #555; }
+      .page .flywheel { background: #f0f0f0; border: 1px solid #ccc; }
+      .page .flywheel .arrow { color: #B8860B; }
+      .page .metrics-table th { background: #eaeaea; }
+      .page .metrics-table td, .page .metrics-table th { border: 1px solid #ccc; }
+    }
+    .gold { color: #D4AF37; }
+    .accent-line { width: 60px; height: 3px; background: linear-gradient(90deg, #D4AF37, #E73A3A); margin: 1rem 0 1.5rem; border-radius: 4px; }
+    .section-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2rem; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+    .section-title .gold { font-style: italic; }
+    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(4px); }
+    .stat-number { font-size: 2.4rem; font-weight: 700; color: #D4AF37; letter-spacing: -0.02em; line-height: 1; }
+    .stat-label { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
+    .btn { display: inline-block; background: linear-gradient(135deg, #D4AF37, #E73A3A); color: #fff; font-weight: 600; padding: 0.7rem 2rem; border-radius: 100px; text-decoration: none; font-size: 0.9rem; letter-spacing: 0.05em; border: none; transition: transform 0.2s, box-shadow 0.2s; }
+    .btn:hover { transform: scale(1.03); box-shadow: 0 0 30px rgba(212,175,55,0.25); }
+    .flywheel { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.75rem 1.5rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.15); border-radius: 60px; padding: 1.2rem 2rem; margin: 1.5rem 0; }
+    .flywheel .step { font-weight: 500; font-size: 0.9rem; letter-spacing: 0.03em; color: rgba(255,255,255,0.8); }
+    .flywheel .arrow { color: #D4AF37; font-size: 1.4rem; font-weight: 300; }
+    .footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; font-size: 0.75rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.25); }
+    .metrics-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+    .metrics-table th { text-align: left; padding: 0.75rem 1rem; background: rgba(255,255,255,0.04); border-bottom: 2px solid rgba(212,175,55,0.3); color: #D4AF37; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.8rem; }
+    .metrics-table td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: rgba(255,255,255,0.8); }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 2.5rem; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 3.2rem; line-height: 1.1; letter-spacing: -0.02em; }
+    .hero .sub { font-size: 1.1rem; color: rgba(255,255,255,0.6); max-width: 500px; margin-top: 0.5rem; }
+    .hero .badge { display: inline-block; background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.2); border-radius: 100px; padding: 0.3rem 1.2rem; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #D4AF37; margin-bottom: 0.5rem; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
+    @media (max-width: 700px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.4rem; }
+      .flywheel { flex-direction: column; gap: 0.5rem; border-radius: 24px; }
+      .flywheel .arrow { transform: rotate(90deg); }
+    }
+    section { margin: 3rem 0; }
+    section:first-of-type { margin-top: 0; }
+    .callout { background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(227,58,58,0.05)); border-left: 3px solid #D4AF37; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="hero">
+    <div>
+      <div class="badge">✦ Hallelujah ONE™</div>
+      <h1>Turning Commerce<br />Into <span class="gold">Community</span><br />Transformation</h1>
+      <p class="sub"><span style="color:#fff;">H3O™ premium beverage revenue + human‑centered AI + housing innovation + workforce development</span><br /><span style="font-size:0.9rem; display:block; margin-top:0.4rem; color:rgba(255,255,255,0.5);">A scalable ecosystem designed to transform everyday purchases into measurable opportunities.</span></p>
+      <div style="margin-top:1rem; font-size:0.9rem; letter-spacing:0.04em; color:#D4AF37;">Drink Life. Share Hope. Hallelujah.</div>
+    </div>
+    <div style="text-align: right; font-size:0.9rem; color:rgba(255,255,255,0.3); letter-spacing:0.05em; line-height:1.8;"><strong style="color:#D4AF37;">The Vision</strong><br />Build a repeatable system<br />that moves people from<br />survival → stability → opportunity.</div>
+  </div>
+  <section>
+    <h2 class="section-title">The <span class="gold">Ecosystem</span></h2>
+    <div class="accent-line"></div>
+    <div style="text-align:center; margin:1rem 0;"><div style="display:inline-block; text-align:left; font-size:0.95rem; color:rgba(255,255,255,0.7); line-height:2.2;"><span style="color:#D4AF37; font-weight:600;">H3O™</span> Premium Consumer Brand → <span style="color:#D4AF37; font-weight:600;">Mission Revenue</span> → <span style="color:#D4AF37; font-weight:600;">Housing + AI + Workforce</span> → <span style="color:#D4AF37; font-weight:600;">Measured Impact</span> → <span style="color:#D4AF37; font-weight:600;">Scalable Expansion</span></div></div>
+    <div class="grid-3">
+      <div class="card"><div style="font-size:2rem; margin-bottom:0.5rem;">🍉</div><div style="font-weight:600; font-size:1.1rem;">H3O Revenue Engine</div><div style="font-size:0.9rem; color:rgba(255,255,255,0.6);">A premium beverage brand creating sustainable, consumer‑driven revenue for mission.</div></div>
+      <div class="card"><div style="font-size:2rem; margin-bottom:0.5rem;">🏠</div><div style="font-weight:600; font-size:1.1rem;">Housing Engine</div><div style="font-size:0.9rem; color:rgba(255,255,255,0.6);">Mission‑aligned housing opportunities through strategic partnerships and qualified programs.</div></div>
+      <div class="card"><div style="font-size:2rem; margin-bottom:0.5rem;">🤖</div><div style="font-weight:600; font-size:1.1rem;">Human Empowerment Engine</div><div style="font-size:0.9rem; color:rgba(255,255,255,0.6);">AI‑powered workforce support for resumes, interviews, digital skills, and career transitions.</div></div>
+    </div>
+  </section>
+  <section>
+    <h2 class="section-title">The <span class="gold">Compounding Loop</span></h2>
+    <div class="accent-line"></div>
+    <div class="flywheel"><span class="step">🛒 Customer Purchase</span><span class="arrow">→</span><span class="step">💰 Mission Contribution</span><span class="arrow">→</span><span class="step">🏗️ Community Investment</span><span class="arrow">→</span><span class="step">🏠 Housing + Training</span><span class="arrow">→</span><span class="step">📈 Human Outcomes</span><span class="arrow">→</span><span class="step">📊 Impact Data</span><span class="arrow">→</span><span class="step">🚀 Greater Capacity</span></div>
+    <p style="font-size:0.9rem; color:rgba(255,255,255,0.5); text-align:center; margin-top:0.5rem;">Every successful loop strengthens the next — revenue → impact → growth.</p>
+  </section>
+  <section>
+    <h2 class="section-title">Impact <span class="gold">Measurement</span></h2>
+    <div class="accent-line"></div>
+    <table class="metrics-table"><thead><tr><th>Category</th><th>Measurement</th></tr></thead><tbody><tr><td>Revenue</td><td>Dollars generated</td></tr><tr><td>Housing</td><td>Units developed / supported</td></tr><tr><td>People</td><td>Individuals served</td></tr><tr><td>Workforce</td><td>Employment outcomes</td></tr><tr><td>Education</td><td>Training completion</td></tr><tr><td>Community</td><td>Long‑term impact indicators</td></tr></tbody></table>
+    <div class="callout"><strong style="color:#D4AF37;">The goal:</strong> Not just growth. <span style="color:rgba(255,255,255,0.9);">Measurable, compounding transformation.</span></div>
+  </section>
+  <section>
+    <h2 class="section-title">Partnership <span class="gold">Opportunity</span></h2>
+    <div class="accent-line"></div>
+    <p style="color:rgba(255,255,255,0.7); max-width:700px; margin-bottom:1.5rem;">We are seeking aligned partners who share our vision of using commerce to build community assets.</p>
+    <div class="grid-2">
+      <div class="card"><strong style="color:#D4AF37;">🏘️ Housing Partners</strong><p style="font-size:0.9rem; color:rgba(255,255,255,0.6); margin-top:0.3rem;">Developers, lenders, housing organizations</p></div>
+      <div class="card"><strong style="color:#D4AF37;">🤝 Community Partners</strong><p style="font-size:0.9rem; color:rgba(255,255,255,0.6); margin-top:0.3rem;">Churches, nonprofits, local organizations</p></div>
+      <div class="card"><strong style="color:#D4AF37;">🏬 Business Partners</strong><p style="font-size:0.9rem; color:rgba(255,255,255,0.6); margin-top:0.3rem;">Retailers, employers, sponsors</p></div>
+      <div class="card"><strong style="color:#D4AF37;">💻 Technology Partners</strong><p style="font-size:0.9rem; color:rgba(255,255,255,0.6); margin-top:0.3rem;">AI, workforce, infrastructure providers</p></div>
+    </div>
+    <div style="text-align:center; margin-top:1.5rem;"><a href="#" class="btn">Connect With Us</a><p style="font-size:0.75rem; color:rgba(255,255,255,0.25); margin-top:0.75rem;">Investment areas: H3O growth · Housing acquisition · Workforce tech · Community programs</p></div>
+  </section>
+  <section style="text-align:center; border-top:1px solid rgba(255,255,255,0.05); padding-top:2rem; margin-top:1rem;">
+    <p style="font-size:1.6rem; font-family:'Playfair Display',serif; font-weight:700; color:#D4AF37; letter-spacing:0.02em;">Build the future with Hallelujah ONE™</p>
+    <p style="max-width:600px; margin:0.5rem auto; color:rgba(255,255,255,0.6); font-size:1rem;">Partner with a platform designed to combine commerce, housing, technology, opportunity, and impact.</p>
+    <p style="font-size:0.8rem; letter-spacing:0.1em; color:rgba(255,255,255,0.3); margin-top:0.5rem;">A beverage can become a funding stream. A home can become a foundation. A skill can become a future.</p>
+    <div style="margin-top:1.5rem; font-family:'Playfair Display',serif; font-size:1.8rem; color:#D4AF37;">Drink Life. Share Hope. Hallelujah.</div>
+  </section>
+  <div class="footer"><span>Hallelujah ONE™ · H3O™ · Human Empowerment Operating System</span><br /><span style="opacity:0.5;">© 2026 · All rights reserved.</span></div>
+</div>
+</body>
+</html>
