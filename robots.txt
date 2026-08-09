@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /investor/
+
+Sitemap: https://hallelujah.one/sitemap.xml
