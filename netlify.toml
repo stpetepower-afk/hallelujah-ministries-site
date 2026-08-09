@@ -3,6 +3,12 @@
   publish = "."
 
 [[redirects]]
+  from = "/investor/*"
+  to = "/stewardship/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/api/chat"
   to = "/.netlify/functions/chat"
   status = 200
